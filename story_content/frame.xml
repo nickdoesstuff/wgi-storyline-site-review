@@ -75,6 +75,7 @@
           </option>
           <option name="settings" value="true" />
           <option name="fullScreenToggle" value="false" />
+          <option name="playbackSpeedControl" value="false" />
         </options>
       </optiongroup>
       <optiongroup name="bottombaroptions">
@@ -1559,6 +1560,7 @@
             <slidelink slideid="_player.61kl2hls32s.6myMuMYmINB" displaytext="Home Page" expand="false" type="slide" />
             <slidelink slideid="_player.61kl2hls32s.6kiPH5koDve" displaytext="Resources" expand="false" type="slide" />
             <slidelink slideid="_player.61kl2hls32s.5YtnipcHS9K" displaytext="Tools" expand="false" type="slide" />
+            <slidelink slideid="_player.61kl2hls32s.5sHEd0dtQ52" displaytext="OPS Learning" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6AZM65qUokL" displaytext="LightBoxes" expand="true" type="slide">
@@ -1568,14 +1570,13 @@
         </slidelink>
         <slidelink slideid="_player.5vK0FlvN9l7" displaytext="Software Basics" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.5vK0FlvN9l7.6kPGodLorpx" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.6ZfjMYpe5Y3" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.5dPujJP6wSW" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.5oyI4uZdLm9" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.6ZdrHLFNF6P" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.6jx6Me2EYDb" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.5ttUXh6sP4k" displaytext="Splash" expand="false" type="slide" />
-            <slidelink slideid="_player.5vK0FlvN9l7.6Cva5xSsGPZ" displaytext="Splash" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.6ZfjMYpe5Y3" displaytext="Slide 1" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.5dPujJP6wSW" displaytext="Slide 2" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.5oyI4uZdLm9" displaytext="Slide 3" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.6ZdrHLFNF6P" displaytext="Slide 4" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.6jx6Me2EYDb" displaytext="Slide 5" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.5ttUXh6sP4k" displaytext="Slide 6" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.6Cva5xSsGPZ" displaytext="Conclusion" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
