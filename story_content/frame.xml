@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="true" outputtype="undefined" theme="unified" themeAccentColor="0x005D92">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npxnabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="true" outputtype="undefined" theme="unified" themeAccentColor="0x005D92">
   <layouts>
-    <layout name="npnxnanbsnfns00001100101" font="Lato" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100101" font="Lato" controllayout="pxabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="npxnabnsnfns00001100101" font="Lato" controllayout="npxnabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="npnxnanbnsnfns00001100101" font="Lato" controllayout="npnxnanbnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100100" font="Lato" controllayout="pxabnsnfns00001100100" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="npnxnanbsnfns00001100101" font="Lato" controllayout="npnxnanbsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
+    <layout name="pxabnsnfns00001100101" font="Lato" controllayout="pxabnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
+    <layout name="npxnabnsnfns00001100101" font="Lato" controllayout="npxnabnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
+    <layout name="npnxnanbnsnfns00001100101" font="Lato" controllayout="npnxnanbnsnfns00001100101" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
+    <layout name="pxabnsnfns00001100100" font="Lato" controllayout="pxabnsnfns00001100100" colorscheme="npxnabnsnfns00001100101" string_table="npxnabnsnfns00001100101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Prototype 2 (square)" />
+              <option name="title_text" value="Prototype 3" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -215,7 +215,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns00001100101">
+    <colorscheme name="npxnabnsnfns00001100101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1393,7 +1393,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns00001100101">
+    <string_table name="npxnabnsnfns00001100101">
       <string id="three_image_progress_audio">progress</string>
       <string id="three_image_audio">audio</string>
       <string id="three_image_camera_down">camera moved down</string>
@@ -1558,7 +1558,21 @@
       <links>
         <slidelink slideid="_player.5vK0FlvN9l7" displaytext="Show Me!" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.5vK0FlvN9l7.6gRbPHqeDJq" displaytext="Software Simulation" expand="false" type="slide" />
+            <slidelink slideid="_player.5vK0FlvN9l7.6gRbPHqeDJq" displaytext="Starting Screen" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5feZzrFZQr1" displaytext="Show Me! Popups" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.5feZzrFZQr1.6MQSzfYgIQd" displaytext="Slide 01" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6bv6kw0ekDU" displaytext="Slide 02" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.5paJwbuZ9Tn" displaytext="Slide 03" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.5bNvVDZWrAb" displaytext="Slide 04" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6B1DrWqcx7l" displaytext="Slide 05" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6a7T5yQTlsz" displaytext="Slide 06" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.5coipbs6aqp" displaytext="Slide 07" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6Rvy4qoR4yO" displaytext="Slide 08" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6IIaywUB1Bz" displaytext="Slide 09" expand="false" type="slide" />
+            <slidelink slideid="_player.5feZzrFZQr1.6K5xL7GQpWk" displaytext="Slide 10" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.5lRgMOZHAVY" displaytext="Key Reminders" expand="true" type="slide">
