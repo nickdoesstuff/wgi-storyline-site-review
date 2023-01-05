@@ -2,121 +2,121 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6Q7V8L4be89":
+      case "6k1eox56lOW":
         Script1();
         break;
-      case "5qsisQQpZ3P":
+      case "5Zp3sjansvP":
         Script2();
         break;
-      case "5z8hrby7HRe":
+      case "6UI9m0XyISE":
         Script3();
         break;
-      case "6GnQmxL1H7M":
+      case "5bO3JBIiK1v":
         Script4();
         break;
-      case "6pVcZrEwpap":
+      case "6PTKJxAZcUN":
         Script5();
         break;
-      case "5auhlmYDzZH":
+      case "6IWAnRZSBOD":
         Script6();
         break;
-      case "6WsOUuUMXQc":
+      case "6LixcWkTZCO":
         Script7();
         break;
-      case "6QqpBYEfSBX":
+      case "64NIhzvg5yT":
         Script8();
         break;
-      case "6hrHlv1eigo":
+      case "5XUiHv0brIl":
         Script9();
         break;
-      case "5uTvHFtt4fl":
+      case "5eOes7WGDlh":
         Script10();
         break;
-      case "5s4XojvtiXq":
+      case "5hsWCjcPrZf":
         Script11();
         break;
-      case "6SDu7BZTCCm":
+      case "6XLfQvnORML":
         Script12();
         break;
-      case "5dZxp5oJGDW":
+      case "6hmSZ2jB8ix":
         Script13();
         break;
-      case "6YrafvhWFTq":
+      case "5yEVyK4iLqK":
         Script14();
         break;
-      case "5uLkUSyY2RH":
+      case "6dnoZmSNa55":
         Script15();
         break;
-      case "6mrCHWlOAPa":
+      case "6MSPHe80Mos":
         Script16();
         break;
-      case "5uFNlfWlyOH":
+      case "62s3F6svUHX":
         Script17();
         break;
-      case "60XHIBk0rxa":
+      case "6cgw2VQfKhd":
         Script18();
         break;
-      case "5k24piWXITN":
+      case "6SleB8zcrvy":
         Script19();
         break;
-      case "6MHNc68XvjA":
+      case "5ZmtHlsmuwV":
         Script20();
         break;
-      case "5fnuWXLvuBN":
+      case "6CY4lbQ1IfA":
         Script21();
         break;
-      case "6HihjHWwa9U":
+      case "6KSG03jBqBp":
         Script22();
         break;
-      case "6053BD1X4pe":
+      case "5gJk7LJNzPC":
         Script23();
         break;
-      case "6Va85hStze3":
+      case "5uP6wmirQBj":
         Script24();
         break;
-      case "6brrH4Ibcds":
+      case "5Y2gEs0Fyt6":
         Script25();
         break;
-      case "5YqE0WXnJrG":
+      case "6fMeW7tzizf":
         Script26();
         break;
-      case "5uI4JzNVRhY":
+      case "5YjTgQna6nf":
         Script27();
         break;
-      case "5ctvMlwD28x":
+      case "5u2JIAJ121X":
         Script28();
         break;
-      case "60PA7whcnbS":
+      case "6YxwOq1Vxug":
         Script29();
         break;
-      case "5dGV3RgdFm9":
+      case "5aQRphL4fPF":
         Script30();
         break;
-      case "5oq0VXPuLhb":
+      case "6ltVTohI5rO":
         Script31();
         break;
-      case "6HgXnd5Clqq":
+      case "5qsBD1VgKqn":
         Script32();
         break;
-      case "6ZNBKNbKvHN":
+      case "6cC3mOb2SIz":
         Script33();
         break;
-      case "5cZNYtHqDYx":
+      case "67n8p5Z8xvX":
         Script34();
         break;
-      case "64tzp8wMV2p":
+      case "5v2WiXxwWm1":
         Script35();
         break;
-      case "6NgTR93K4Ly":
+      case "6ZliZ7LFalm":
         Script36();
         break;
-      case "5mO4pqw72AD":
+      case "6KTxU1G20OJ":
         Script37();
         break;
-      case "63DQqDcAgRD":
+      case "6etq9eqUiEg":
         Script38();
         break;
-      case "6cqMH7fTi4Y":
+      case "6fZqS0tlxqb":
         Script39();
         break;
   }
@@ -154,17 +154,47 @@ player.SetVar('Course_URL', text);
 
 function Script3()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script4()
@@ -199,17 +229,47 @@ player.SetVar('Course_URL', text);
 
 function Script6()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script7()
@@ -244,17 +304,47 @@ player.SetVar('Course_URL', text);
 
 function Script9()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script10()
@@ -289,17 +379,47 @@ player.SetVar('Course_URL', text);
 
 function Script12()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script13()
@@ -334,17 +454,47 @@ player.SetVar('Course_URL', text);
 
 function Script15()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script16()
@@ -379,17 +529,47 @@ player.SetVar('Course_URL', text);
 
 function Script18()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script19()
@@ -424,17 +604,47 @@ player.SetVar('Course_URL', text);
 
 function Script21()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script22()
@@ -469,17 +679,47 @@ player.SetVar('Course_URL', text);
 
 function Script24()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script25()
@@ -514,17 +754,47 @@ player.SetVar('Course_URL', text);
 
 function Script27()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script28()
@@ -559,17 +829,47 @@ player.SetVar('Course_URL', text);
 
 function Script30()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script31()
@@ -604,17 +904,47 @@ player.SetVar('Course_URL', text);
 
 function Script33()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script34()
@@ -649,17 +979,47 @@ player.SetVar('Course_URL', text);
 
 function Script36()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
 function Script37()
@@ -694,16 +1054,46 @@ player.SetVar('Course_URL', text);
 
 function Script39()
 {
-  var player = GetPlayer();
+  ///////////////////////////////////////////////////////////////////////////
+//THIS SECTION GETS VARIABLES FROM STORYLINE YOU CAN USE IN YOUR CODE
+///////////////////////////////////////////////////////////////////////////
+var player = GetPlayer();
 var Course_Title = player.GetVar("Course_Title");
 var Course_URL = player.GetVar("Course_URL");
 
-emailTo = "";
-emailCC = "";
+
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE SUBJECT
+///////////////////////////////////////////////////////////////////////////
 emailSub = "Check out the " + Course_Title + " resource!";
-emailBody = "There's some really handy information in the " + Course_Title + " resource.%0d%0a%0d%0aHere's the link:%0d%0a" + Course_URL + "%0d%0a%0d%0a";
 
 
-location.href = "mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody;
+
+///////////////////////////////////////////////////////////////////////////
+//THIS IS WHERE YOU SET THE BODY
+//The body is built by adding many strings together, for ease of editing
+///////////////////////////////////////////////////////////////////////////
+
+emailBody = "There's some really handy information in the " + Course_Title + " resource.";
+
+//2 new lines
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+emailBody += "Here's the link:"
+
+//1 new line
+emailBody += "%0d%0a";
+
+//the course url from the variable
+emailBody += Course_URL
+
+//2 new lines - leaves space for email signature
+emailBody += "%0d%0a";
+emailBody += "%0d%0a";
+
+
+location.href = "mailto:?subject=" + emailSub + "&body=" + emailBody;
 }
 
